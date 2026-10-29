@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bored Scanner — the “boring” 99¢ asset scanner for iPhone and iPad</title>
+<meta name="description" content="Photograph a device label. Bored Scanner keeps the serial, part number and MAC addresses, skips the fine print, and sends them to Snipe-IT or a spreadsheet. Proudly “boring”: 99¢, no subscription, no backend, no data collected.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bored Scanner">
+<meta property="og:url" content="https://boredscanner.space/">
+<meta property="og:title" content="Bored Scanner — the “boring” 99¢ asset scanner for iPhone and iPad">
+<meta property="og:description" content="Photograph a device label. Bored Scanner keeps the serial, part number and MAC addresses, skips the fine print, and sends them to Snipe-IT or a spreadsheet. Proudly “boring”: 99¢, no subscription, no backend, no data collected.">
+<meta property="og:image" content="https://boredscanner.space/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A device label with the serial and Wi-Fi MAC kept and the fine print crossed out, next to the headline The most boring asset scanner you&#x27;ll ever buy.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#3A1A72">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap" style="display:block">
+    <div class="top">
+      <a class="brand" href="/"><img src="mark.png" alt="" width="30" height="30"> Bored Scanner</a>
+      <nav class="nav">
+        <a href="#how">How it works</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://boredsoftware.space/support/scanner.html">Support</a>
+      </nav>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top: clamp(24px, 5vw, 56px)">
+    <div>
+      <div class="stamp" role="img" aria-label="Certified boring"><span class="stamp-top">Certified</span><span class="stamp-main">Boring</span></div>
+      <h1>The most “boring” asset scanner you'll ever buy.</h1>
+      <p class="lede">Photograph the whole label. Bored Scanner keeps the serial, part number and MAC addresses, skips the “Made in China,” the FCC ID and the copyright line, and sends what matters to Snipe-IT or a spreadsheet.</p>
+      <div class="setup-badge"><span class="lvl" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span>Setup: none for CSV capture. Your IT team for Snipe-IT</div>
+      <div class="price-tag"><b>$0.99</b><span class="per">per iPhone or iPad</span><span class="fine">No subscription. No account with us. <a href="#fit" style="color:inherit">Is it right for you?</a></span></div>
+      <div class="cta-row">
+        <span class="soon">Coming soon to the App Store</span>
+      </div>
+    </div>
+    <figure class="phone"><img src="screens/02-check-and-send.png" width="320" height="568" alt="Bored Scanner review screen with a demo serial and Wi-Fi MAC marked Checked, a destination selector and Send to Snipe-IT."></figure>
+  </div>
+</header>
+
+<main>
+
+<section id="label">
+  <div class="wrap label-split">
+    <div>
+      <h2>Reads the whole label. Keeps what matters.</h2>
+      <p class="lede">A box label is mostly fine print. Bored Scanner reads all of it on the device, then looks for the lines that belong in inventory and drops the rest.</p>
+      <ul class="nots">
+        <li>Kept: serial, part number, Wi-Fi, Ethernet and Bluetooth addresses.</li>
+        <li>Skipped: country of origin, FCC and regulatory IDs, copyright, marketing copy.</li>
+        <li>Don't want Bluetooth? Turn it off. Other brand? Add a label profile with its wording.</li>
+        <li>Unsure or malformed values are flagged for a person to check. Nothing is guessed.</li>
+      </ul>
+    </div>
+    <figure class="label-card" aria-label="Example device label. Serial, part number, Wi-Fi and Bluetooth lines are kept; origin, FCC ID and copyright lines are skipped.">
+      <div class="skip">Designed by Apple in California. Assembled in China.</div>
+      <div class="keep"><span>Serial No.</span><code>DEMO-001</code><b>Serial</b></div>
+      <div class="keep"><span>Part No.</span><code>DEMO-PN/A</code><b>Part number</b></div>
+      <div class="keep"><span>Wi-Fi Address</span><code>02:00:00:00:00:01</code><b>Wi-Fi MAC</b></div>
+      <div class="keep"><span>Bluetooth</span><code>02:00:00:00:00:02</code><b>Bluetooth</b></div>
+      <div class="skip">FCC ID: ABC-E0000 · IC: 0000A-E0000</div>
+      <div class="skip">This device complies with part 15 of the FCC Rules.</div>
+      <div class="skip">© 2026 Apple Inc. All rights reserved.</div>
+      <figcaption>Fictional label. Purple lines are captured; grey lines are ignored.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="jobs">
+  <div class="wrap">
+    <h2>The desk work, done standing up.</h2>
+    <p class="lede">Intake, hand-outs, lookups and retirements used to mean walking back to a computer, opening the asset system and copying serials by hand. Now they happen on an iPhone or iPad, right where the hardware is.</p>
+    <div class="grid-4">
+      <div class="card">
+        <h3>Inventory</h3>
+        <p>Photograph the label, check the fields, send. The asset record is created or updated in Snipe-IT.</p>
+      </div>
+      <div class="card">
+        <h3>Assign</h3>
+        <p>Pick the person from the employees already in your asset system. Search by name or email. No second directory to set up.</p>
+      </div>
+      <div class="card">
+        <h3>Lookup</h3>
+        <p>Found a computer in a cabinet? Scan it or type the serial and see where it stands: ready to deploy, assigned to someone, or retired.</p>
+      </div>
+      <div class="card">
+        <h3>Retire</h3>
+        <p>Done with a computer? Scan it and retire it. It's marked retired in your asset system and the record is kept. It asks before changing anything.</p>
+      </div>
+    </div>
+    <p class="small" style="margin-top:20px">Assign, Lookup and Retire work with Snipe-IT. With Local CSV, Inventory works on its own.</p>
+  </div>
+</section>
+
+<section id="fit" class="fit">
+  <div class="wrap">
+    <h2>Is Bored Scanner right for you?</h2>
+    <p class="lede">Yes, even without an asset system. Start by capturing assets to a spreadsheet. When you add Snipe-IT, Assign, Lookup and Retire turn on. One 99¢ purchase covers both.</p>
+    <div class="grid-2">
+      <div class="card yes">
+        <h3>No asset system yet</h3>
+        <ul>
+          <li><span>Inventory saves each checked scan to a CSV on the device.</span></li>
+          <li><span>Export it by AirDrop, Mail or Files and open it in your spreadsheet.</span></li>
+          <li><span>No server, no API token, no setup. Install and scan.</span></li>
+          <li><span>Assign, Lookup and Retire wait until you connect a system. They need one to ask.</span></li>
+        </ul>
+      </div>
+      <div class="card yes">
+        <h3>With Snipe-IT</h3>
+        <ul>
+          <li><span>All four jobs: Inventory, Assign, Lookup and Retire.</span></li>
+          <li><span>Scans go straight into your asset records. No spreadsheet in between.</span></li>
+          <li><span>Someone with admin access creates an API token and maps the serial and MAC fields once.</span></li>
+          <li><span>Add the connection in settings whenever you're ready. Your 99¢ already covers it.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="note" style="margin-top:24px">
+      <p><strong>Use a different asset system?</strong> More can be added on request. <a href="mailto:hello@bacstech.io?subject=Bored%20Scanner%3A%20please%20add%20my%20asset%20system">Tell us which one you use</a>. Requests decide what gets built next.</p>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <h2>Why we're “boring.”</h2>
+    <p class="lede">Asset tools are usually sold as platforms, with barcode wands, per-asset pricing and a sales team. Most IT teams just want serial numbers in their asset system without typing them. That's all this does.</p>
+    <div class="grid-3" style="margin-top:32px">
+      <div class="card">
+        <h3>No barcode-wand ritual</h3>
+        <p>One photo instead of aiming a wand at the right barcode, five times per box. The camera reads them all at once.</p>
+      </div>
+      <div class="card">
+        <h3>Nobody upselling you</h3>
+        <p>No per-asset pricing, no “enterprise tier,” no account rep. You already pay for an inventory system. This isn't another one.</p>
+      </div>
+      <div class="card">
+        <h3>A person checks every field</h3>
+        <p>Reading text is easy. Knowing which text is the serial is the job. Anything uncertain is flagged, and nothing is sent until you've checked it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li>
+        <h3>Buy it</h3>
+        <p>99¢ on the App Store, or through Apple Business if you deploy devices in bulk. One copy per iPhone or iPad.</p>
+      </li>
+      <li>
+        <h3>Connect your system</h3>
+        <p>No asset system? Skip this and pick Local CSV. Otherwise enter your Snipe-IT address and API token and map the fields, or push it all from your MDM.</p>
+      </li>
+      <li>
+        <h3>Scan, check, send</h3>
+        <p>Inventory, Assign, Lookup and Retire. Each one: point the camera, check the fields, confirm.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="screens">
+  <div class="wrap">
+    <h2>What it looks like</h2>
+    <p class="lede">Scan, check, send. The same rhythm for every job.</p>
+    <ul class="shots">
+      <li><img src="screens/01-home.png" width="320" height="568" loading="lazy" alt="Bored Scanner home screen with four purple buttons, Inventory, Assign, Lookup and Retire, and demo recent scans."><p>Four jobs on one screen. Recent scans below.</p></li>
+      <li><img src="screens/02-check-and-send.png" width="320" height="568" loading="lazy" alt="Review screen with a demo serial and Wi-Fi MAC marked Checked and a Send to Snipe-IT button."><p>Check every value before it's sent.</p></li>
+      <li><img src="screens/03-assign.png" width="320" height="568" loading="lazy" alt="Assign screen with a checked demo serial and a fictional employee selected."><p>Assign: pick a person from your inventory system's own directory.</p></li>
+      <li><img src="screens/05-lookup-actions.png" width="320" height="568" loading="lazy" alt="Lookup result for a demo laptop with a fictional assignee and buttons to reassign, return to inventory or retire."><p>Lookup: who has it, then reassign, return or retire. Each change asks first.</p></li>
+      <li><img src="screens/06-local-csv.png" width="320" height="568" loading="lazy" alt="Review screen with Local CSV selected, a local-only notice and a Save to local CSV button."><p>No inventory system? Save to a CSV on the device.</p></li>
+      <li><img src="screens/07-export-csv.png" width="320" height="568" loading="lazy" alt="Saved local CSV screen with demo fields and an Export CSV button."><p>Export the CSV by AirDrop, Mail or Files. Nothing syncs on its own.</p></li>
+    </ul>
+    <p class="small">Screenshots use fictional demo data.</p>
+  </div>
+</section>
+
+<section id="privacy">
+  <div class="wrap">
+    <h2>We don't want your data. Honestly, it sounds “boring.”</h2>
+    <p class="lede">An asset scanner sees serial numbers, MAC addresses and who has which laptop. That belongs in your inventory system, not ours.</p>
+    <ul class="nots">
+      <li>We never see your assets or your people. The app talks to your inventory system and nothing else.</li>
+      <li>Label photos and everything the camera read stay on the device. Only the fields you checked are sent.</li>
+      <li>Your API token lives in the device's Keychain, not in the app's settings.</li>
+      <li>Spreadsheet mode stays on the device until you export the file yourself.</li>
+      <li>No analytics, no crash reporting, no tracking, no third-party code.</li>
+    </ul>
+    <div class="plain">
+      <p><strong>Why we can say this.</strong> There is no Bored Scanner backend. We couldn't collect your data if we wanted to, and we've designed it so we never want to. The details are in the <a href="privacy.html">privacy policy</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="pricing">
+      <div class="big">99¢<small>per iPhone or iPad, once</small></div>
+      <div>
+        <h2 style="color:#fff">Everything's included. Nothing's “exciting.”</h2>
+        <ul>
+          <li>Inventory, Assign, Lookup and Retire, all four</li>
+          <li>Label reading on the device, with Apple hardware built in and your own label profiles</li>
+          <li>Works with Snipe-IT, or saves scans to a CSV for your spreadsheet</li>
+          <li>Start with CSV, connect a system later: no upgrade fee</li>
+          <li>Employee search from your inventory system's own user list</li>
+          <li>Full MDM support (Jamf, Kandji and friends), no “enterprise tier”</li>
+        </ul>
+        <p style="margin:18px 0 0">Buying for a whole team? Apple Business lets you buy copies in bulk and push them to devices with no Apple ID on the device. Still 99¢ each.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="family">
+  <div class="wrap">
+    <h2>The “boring” family.</h2>
+    <p class="lede">Four apps, one rule: 99¢, no subscription, no backend, your data stays yours.</p>
+    <ul class="family">
+      <li><a href="https://boredroom.space"><img src="family-boredroom.png" alt="" width="36" height="36"><span>Bored Room<small>Room signs</small></span></a></li>
+      <li><a href="https://boredscanner.space" aria-current="page"><img src="family-boredscanner.png" alt="" width="36" height="36"><span>Bored Scanner<small>Asset intake</small></span></a></li>
+      <li><a href="https://boredpackage.space"><img src="family-boredpackage.png" alt="" width="36" height="36"><span>Bored Package<small>Front-desk packages</small></span></a></li>
+      <li><a href="https://boredguest.space"><img src="family-boredguest.png" alt="" width="36" height="36"><span>Bored Guest<small>Visitor sign-in</small></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2>Questions</h2>
+    <details>
+      <summary>When can I buy it?</summary>
+      <p>Soon. Bored Scanner is finishing testing before it goes to the App Store.</p>
+    </details>
+    <details>
+      <summary>Does it work with my asset system?</summary>
+      <p>Snipe-IT today, plus Local CSV for any spreadsheet. Other asset systems are added on request. <a href="mailto:hello@bacstech.io?subject=Bored%20Scanner%3A%20please%20add%20my%20asset%20system">Tell us which one you use</a>.</p>
+    </details>
+    <details>
+      <summary>Can I use it without Snipe-IT?</summary>
+      <p>Yes. Pick Local CSV and Inventory saves each checked scan to a CSV file on the device. Export it to a Mac or PC and open it in your spreadsheet. Assign, Lookup and Retire need an asset system to ask, so they switch on when you connect Snipe-IT. That costs nothing extra.</p>
+    </details>
+    <details>
+      <summary>iPhone or iPad?</summary>
+      <p>Either. One app runs on both. An iPhone is easier to carry down a pallet; an iPad works fine on a receiving bench.</p>
+    </details>
+    <details>
+      <summary>Does it read every manufacturer's labels?</summary>
+      <p>Apple's labels are built in. For anything else, add a label profile in settings: tell it what the serial and MAC lines are called on that box, and it looks for those. Whatever it isn't sure of gets flagged for you to check.</p>
+    </details>
+    <details>
+      <summary>Does Retire wipe the device?</summary>
+      <p>No. Retire marks the asset retired in your inventory system and keeps its record. Wiping and disposal stay with your MDM and your recycler.</p>
+    </details>
+    <details>
+      <summary>Is there a subscription, ever?</summary>
+      <p>No. 99¢ buys the app. Updates are free. There's no server to pay for, so there's nothing to charge you for.</p>
+    </details>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>Bored Scanner is a proudly “boring” product of <a href="https://www.bacstech.io">BACS Tech, Inc.</a> &middot; <a href="mailto:hello@bacstech.io">hello@bacstech.io</a></div>
+    <div><a href="https://boredroom.space">Bored Room</a> &middot; <a href="https://boredpackage.space">Bored Package</a> &middot; <a href="https://boredguest.space">Bored Guest</a> &middot; <a href="privacy.html">Privacy policy</a></div>
+  </div>
+</footer>
+
+</body>
+</html>

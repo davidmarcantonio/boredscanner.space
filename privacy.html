@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — Bored Scanner</title>
+<meta name="description" content="Bored Scanner's privacy policy. The app has no backend and collects no data. It talks only to your own inventory system.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bored Scanner">
+<meta property="og:url" content="https://boredscanner.space/privacy.html">
+<meta property="og:title" content="Privacy policy — Bored Scanner">
+<meta property="og:description" content="Bored Scanner&#x27;s privacy policy. The app has no backend and collects no data. It talks only to your own inventory system.">
+<meta property="og:image" content="https://boredscanner.space/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A device label with the serial and Wi-Fi MAC kept and the fine print crossed out, next to the headline The most boring asset scanner you&#x27;ll ever buy.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#3A1A72">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+
+<div class="wrap">
+  <div class="top">
+    <a class="brand" href="/"><img src="mark.png" alt="" width="30" height="30"> Bored Scanner</a>
+    <nav class="nav">
+        <a href="/#how">How it works</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="/#faq">FAQ</a>
+        <a href="https://boredsoftware.space/support/scanner.html">Support</a>
+      </nav>
+  </div>
+</div>
+
+<main class="wrap article">
+  <h1>Privacy policy</h1>
+  <p class="updated">Last updated October 29, 2026. Applies to the Bored Scanner app for iPhone and iPad and to boredscanner.space.</p>
+
+  <p>Bored Scanner is made by BACS Tech, Inc. ("BACS Tech", "we", "us"). This policy explains what the app and this website do with your data, which is as little as possible.</p>
+
+  <p class="lede">Bored Scanner does not collect, store, transmit, or sell any personal data to us. There is no Bored Scanner server. The app runs on your iPhone or iPad and talks only to the inventory system you connect it to: your own Snipe-IT. In spreadsheet mode it talks to nothing at all.</p>
+
+  <h2>What the app does with your data</h2>
+  <p>You photograph a device label, or pick a saved photo of one. The device reads the label with Apple's built-in text and barcode recognition, on the device. Nothing is sent anywhere to be read.</p>
+  <p>You check the fields it found (for example serial number, part number, and Wi-Fi, Ethernet and Bluetooth addresses) and correct anything that's wrong. When you tap send, only the fields you checked and mapped go to your inventory system, over HTTPS, using the API token you entered. The photo and everything else the camera read are not sent.</p>
+  <p>To assign a device to someone, the app downloads the list of eligible users from your inventory system: names, email addresses, and that system's own user IDs. It keeps a copy on the device so you can search it, and checks the chosen person with your inventory system again before assigning.</p>
+  <p>Lookup, Assign, Return and Retire send the request you confirm (for example "check this serial out to this person") to your inventory system and read the result back to confirm it worked.</p>
+  <h3>Spreadsheet mode</h3>
+  <p>If you choose the spreadsheet destination instead of an inventory system, checked scans are saved to a CSV file on the device. Nothing is sent anywhere. The file leaves the device only when you export it yourself, for example by AirDrop, Mail or the Files app. Nothing syncs automatically. Assign, Lookup and Retire are not available in this mode.</p>
+
+  <h2>What stays on the device</h2>
+  <ul>
+    <li>Label photos and the raw recognition results, so you can check a field against the original.</li>
+    <li>Your reviews and corrections, and a log of pending and completed sends, so an interrupted send isn't repeated or lost.</li>
+    <li>The cached user list from your inventory system.</li>
+    <li>Connection settings, field mappings and label profiles.</li>
+    <li>Spreadsheet-mode CSV files, until you export or delete them.</li>
+    <li>Your API token, in the device's Keychain, protected by the device.</li>
+  </ul>
+  <p>Turning a field off stops it being reviewed and sent. It does not blur or delete it from the stored photo. Deleting the app deletes all of the above, except the token in the Keychain, which is cleared when you remove the connection in the app.</p>
+
+  <h2>What we don't do</h2>
+  <ul>
+    <li>No analytics or usage tracking of any kind.</li>
+    <li>No crash reporting services.</li>
+    <li>No advertising, no advertising identifiers.</li>
+    <li>No third-party SDKs. The app contains only our code and Apple's frameworks.</li>
+    <li>No accounts with us, and no network connections except to the inventory system address you, or your organization's MDM, entered.</li>
+    <li>No cloud recognition or AI service. Labels are read on the device.</li>
+  </ul>
+
+  <h2>What Apple may tell us</h2>
+  <p>If you have opted in to sharing analytics with developers in iOS or iPadOS settings, Apple provides us with aggregate, anonymous statistics such as device model, OS version, and country. We cannot see individual devices or users. You can turn this off under Settings › Privacy &amp; Security › Analytics &amp; Improvements.</p>
+
+  <h2>Your inventory system</h2>
+  <p>Data you send to Snipe-IT is handled by that system, whether you host it or a vendor does, under its own terms and your organization's settings. What the app can read and change there depends on the permissions of the API token you give it. Snipe-IT is a trademark of its owner; Bored Scanner is not affiliated with or endorsed by it.</p>
+
+  <h2>Managed deployments</h2>
+  <p>If your organization deploys Bored Scanner through an MDM, it may push settings to the device: the inventory system address, API token, field mappings, label profiles and fields to skip. Bored Scanner reads them from the device and moves the token into the Keychain. Those settings are handled by your organization's MDM under its own privacy terms, and its administrators can see what they pushed.</p>
+
+  <h2>This website</h2>
+  <p>boredscanner.space is a static site. It sets no cookies and runs no analytics. If you email us, we keep the email so we can reply.</p>
+
+  <h2>Children</h2>
+  <p>Bored Scanner is a business tool and is not directed at children.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the date at the top changes and the previous version is kept in this website's public history on GitHub. We will not change the central promise: no backend, no data collection.</p>
+
+  <h2>Contact</h2>
+  <p>BACS Tech, Inc. &middot; <a href="https://www.bacstech.io">www.bacstech.io</a> &middot; <a href="mailto:hello@bacstech.io">hello@bacstech.io</a></p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>Bored Scanner is a product of <a href="https://www.bacstech.io">BACS Tech, Inc.</a> &middot; <a href="mailto:hello@bacstech.io">hello@bacstech.io</a></div>
+    <div><a href="/">Bored Scanner</a> &middot; <a href="privacy.html">Privacy policy</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
