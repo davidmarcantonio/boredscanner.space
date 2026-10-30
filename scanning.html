@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Bored Scanner scans, and how it reads a label</title>
+<meta name="description" content="Box labels, asset tags, engraved serials and a whole pallet of boxes. How Bored Scanner reads a label on the device, keeps the serial and MACs, and skips the fine print.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bored Scanner">
+<meta property="og:url" content="https://boredscanner.space/scanning.html">
+<meta property="og:title" content="What Bored Scanner scans, and how">
+<meta property="og:description" content="Box labels, asset tags, engraved serials and a whole pallet of boxes. How Bored Scanner reads a label on the device, keeps the serial and MACs, and skips the fine print.">
+<meta property="og:image" content="https://boredscanner.space/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A device label with the serial and Wi-Fi MAC kept and the fine print crossed out, next to the headline The most boring asset scanner you&#x27;ll ever buy.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#3A1A72">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css?v=6">
+</head>
+<body>
+
+<header class="hero hero-short">
+  <div class="wrap" style="display:block">
+    <div class="top">
+      <a class="brand" href="/"><img src="mark.png" alt="" width="30" height="30"> Bored Scanner</a>
+      <nav class="nav">
+        <a href="/#how">How it works</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="/#faq">FAQ</a>
+        <a href="https://boredsoftware.space/support/scanner.html">Support</a>
+      </nav>
+    </div>
+  </div>
+  <div class="wrap" style="display:block;margin-top:clamp(20px,4vw,44px)">
+    <h1>What it scans, and how it reads a label.</h1>
+    <p class="lede">One photo of the whole label. The iPhone or iPad reads every line and every barcode, keeps the values that belong in inventory, and asks you to check them before anything is sent.</p>
+  </div>
+</header>
+
+<main>
+
+<section id="what">
+  <div class="wrap">
+    <h2>What you can point it at</h2>
+    <div class="scan-grid">
+      <div class="card scan-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="10" width="36" height="28" rx="4"/><path d="M12 18h14M12 24h10M12 30h12M32 17v14M35 17v14M38 17v14"/></svg>
+        <h3>Box labels</h3>
+        <p>The sticker on the box. Serial, part number, and Wi-Fi, Ethernet and Bluetooth addresses, from one photo, even when the label has several barcodes on it. Apple labels are built in.</p>
+      </div>
+      <div class="card scan-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="10" width="36" height="28" rx="4"/><path d="M12 18h8M24 18h12M12 26h8M24 26h10"/><path d="M30 34l4 4 8-9"/></svg>
+        <h3>Other brands' labels</h3>
+        <p>Add a label profile: tell it what that label calls the serial and MAC lines, like "S/N" or "LAN MAC", and it looks for those words. Works for Lenovo, Dell or your own tags.</p>
+      </div>
+      <div class="card scan-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="14" width="32" height="20" rx="3"/><path d="M14 20v8M17 20v8M21 20v8M24 20v8M28 20v8M31 20v8M34 20v8"/></svg>
+        <h3>Asset tags</h3>
+        <p>Found a laptop with your company's asset sticker on it? Lookup scans the tag and shows the model, status and who has it. Serial works too, and Wi-Fi MAC or IMEI once they're mapped.</p>
+      </div>
+      <div class="card scan-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="14" width="36" height="22" rx="6"/><path d="M14 25h20" stroke-dasharray="2 3"/><path d="M30 8l6 6"/></svg>
+        <h3>Engraved serials</h3>
+        <p>The tiny serial on the bottom of a laptop with no box in sight. If the camera can't read it, type it. Lookup doesn't need a photo.</p>
+      </div>
+      <div class="card scan-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="8" width="32" height="32" rx="5"/><circle cx="18" cy="19" r="4"/><path d="M8 34l10-9 7 6 6-5 9 8"/></svg>
+        <h3>Saved photos</h3>
+        <p>Already took a picture of the label? Import it and it's read the same way, on the device.</p>
+      </div>
+      <div class="card scan-card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="22" width="16" height="16" rx="2"/><rect x="26" y="22" width="16" height="16" rx="2"/><rect x="16" y="6" width="16" height="16" rx="2"/></svg>
+        <h3>A whole pallet</h3>
+        <p>Keep shooting. Earlier photos are read in the background while you move to the next box, then wait in a queue for you to check.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how-it-reads">
+  <div class="wrap">
+    <h2>How it reads a label</h2>
+    <div class="reads">
+      <ol class="pipeline">
+        <li><b>Photograph the label.</b> The whole thing. No aiming at the one right barcode.</li>
+        <li><b>Read it on the device.</b> Apple's built-in text and barcode recognition reads every line and every code, and notes where each sits on the label. Nothing is uploaded to be read.</li>
+        <li><b>Match words to values.</b> The label profile looks for the printed names, like "Serial No." and "Wi-Fi Address", and takes the value beside each one or in the barcode next to it. Country of origin, FCC IDs, copyright and marketing copy are skipped.</li>
+        <li><b>Check the values.</b> A MAC address has to be 12 hexadecimal digits. If a barcode disagrees with the printed text, or a reading is unsure or malformed, the field is flagged instead of guessed. Nothing is quietly "fixed."</li>
+        <li><b>You confirm, then send.</b> Only the fields you checked go to Snipe-IT or the CSV. With Snipe-IT, success shows only after the app reads the record back and the values match.</li>
+      </ol>
+      <figure class="label-card" aria-label="Example device label. Serial, part number, Wi-Fi and Bluetooth lines are kept; origin, FCC ID and copyright lines are skipped.">
+        <div class="skip">Designed by Apple in California. Assembled in China.</div>
+        <div class="keep"><span>Serial No.</span><code>DEMO-001</code><b>Serial</b></div>
+        <div class="keep"><span>Part No.</span><code>DEMO-PN/A</code><b>Part number</b></div>
+        <div class="keep"><span>Wi-Fi Address</span><code>02:00:00:00:00:01</code><b>Wi-Fi MAC</b></div>
+        <div class="keep"><span>Bluetooth</span><code>02:00:00:00:00:02</code><b>Bluetooth</b></div>
+        <div class="skip">FCC ID: ABC-E0000 · IC: 0000A-E0000</div>
+        <div class="skip">© 2026 Apple Inc. All rights reserved.</div>
+        <figcaption>Fictional label. Purple lines are captured; grey lines are ignored.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="check">
+  <div class="wrap check-split">
+    <figure class="phone"><img src="screens/02-check-and-send.png" width="320" height="568" loading="lazy" alt="Bored Scanner review screen with a demo serial and Wi-Fi MAC marked Checked and a Send to Snipe-IT button."></figure>
+    <div>
+      <h2>A person checks every field</h2>
+      <p class="lede">Text recognition is good, not perfect. A serial that looks valid can still be the wrong serial. So every included field gets a check before it's sent, and editing a value clears its check.</p>
+      <ul class="nots">
+        <li>Tap the label photo to compare a value with what's printed.</li>
+        <li>Turn off fields you never want, like Bluetooth, and they drop out of the review.</li>
+        <li>Each photo keeps the profile it was read with. Change settings later and you can re-read it on purpose.</li>
+      </ul>
+      <p class="small">Screenshot uses fictional demo data.</p>
+    </div>
+  </div>
+</section>
+
+<section id="wont">
+  <div class="wrap">
+    <h2>What it won't do</h2>
+    <ul class="nots">
+      <li>Recognize every label ever printed. Apple is built in; other labels need a profile with their wording.</li>
+      <li>Guess. Missing, unsure and malformed values are flagged for you, not filled in.</li>
+      <li>Send the photo. Label photos and raw readings stay on the device; only checked fields leave it.</li>
+      <li>Blur the photo. Turning a field off stops it being captured; it doesn't redact it from the picture.</li>
+    </ul>
+    <p style="margin-top:24px"><a class="cta" href="/#jobs">See the four jobs it does</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>Bored Scanner is a proudly “boring” product of <a href="https://www.bacstech.io">BACS Tech, Inc.</a> &middot; <a href="mailto:hello@bacstech.io">hello@bacstech.io</a></div>
+    <div><a href="/">Bored Scanner</a> &middot; <a href="scanning.html">What it scans</a> &middot; <a href="compare.html">How it compares</a> &middot; <a href="privacy.html">Privacy policy</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
