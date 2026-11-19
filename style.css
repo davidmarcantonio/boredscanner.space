@@ -434,3 +434,11 @@ a.sw-item:hover { background: var(--sw-tint); color: var(--sw-ink); }
 .u-block { display: block !important; }
 .u-white { color: #fff !important; }
 .u-inherit { color: inherit !important; }
+
+/* Bored menu swatches: one colour per site. These were inline style attributes; they live here so the
+   Content-Security-Policy can forbid inline styles. */
+.bmenu-software h4 i { background: #3E5A72; }
+.bmenu-room h4 i { background: #1C8C6E; }
+.bmenu-scanner h4 i { background: #6B3FC4; }
+.bmenu-package h4 i { background: #1A6FB8; }
+.bmenu-guest h4 i { background: #C2510F; }
