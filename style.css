@@ -1,3 +1,12 @@
+/* Instrument Sans, self-hosted (SIL OFL 1.1, see fonts/OFL.txt). One variable file per
+   subset; declared at the three weights the pages have always loaded: 400, 600, 700. */
+@font-face { font-family: "Instrument Sans"; font-style: normal; font-weight: 400; font-stretch: 100%; font-display: swap; src: url("fonts/instrument-sans-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Instrument Sans"; font-style: normal; font-weight: 400; font-stretch: 100%; font-display: swap; src: url("fonts/instrument-sans-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Instrument Sans"; font-style: normal; font-weight: 600; font-stretch: 100%; font-display: swap; src: url("fonts/instrument-sans-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Instrument Sans"; font-style: normal; font-weight: 600; font-stretch: 100%; font-display: swap; src: url("fonts/instrument-sans-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Instrument Sans"; font-style: normal; font-weight: 700; font-stretch: 100%; font-display: swap; src: url("fonts/instrument-sans-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Instrument Sans"; font-style: normal; font-weight: 700; font-stretch: 100%; font-display: swap; src: url("fonts/instrument-sans-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
 /* Bored Scanner — boredscanner.space
    Palette: Violet, "Grimace" purple accent. Swap the tokens below to re-skin the whole site. */
 
@@ -413,3 +422,15 @@ a.sw-item:hover { background: var(--sw-tint); color: var(--sw-ink); }
 .sw-all { display: block; padding: 10px; margin-top: 4px; border-top: 1px solid var(--sw-line); font-weight: 600; font-size: .92rem; text-decoration: none; color: var(--sw-link); }
 @media print { .switcher .sw-menu, .sw-chev { display: none; } }
 :root { --sw-ink: var(--ink); --sw-ink-2: var(--ink-2); --sw-line: var(--chrome); --sw-tint: var(--paper); --sw-accent: var(--accent); --sw-link: var(--ocean); }
+
+/* One-off spacing and colour tweaks. These were inline style attributes; they live here so the
+   Content-Security-Policy can forbid inline styles. !important keeps the precedence they had inline. */
+.u-mt-20 { margin-top: 20px !important; }
+.u-mt-24 { margin-top: 24px !important; }
+.u-mt-32 { margin-top: 32px !important; }
+.u-mt-fluid { margin-top: clamp(24px, 5vw, 56px) !important; }
+.u-mt-fluid-sm { margin-top: clamp(20px, 4vw, 44px) !important; }
+.u-m-18-0-0 { margin: 18px 0 0 !important; }
+.u-block { display: block !important; }
+.u-white { color: #fff !important; }
+.u-inherit { color: inherit !important; }

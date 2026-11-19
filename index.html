@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bored Scanner: 99¢ laptop asset tag and serial number scanner for iPhone and iPad</title>
 <meta name="description" content="Photograph a device label. Bored Scanner keeps the serial, part number and MAC addresses, skips the fine print, and sends them to Snipe-IT or a spreadsheet. Proudly “boring”: 99¢, no subscription, no backend, no data collected.">
@@ -17,12 +18,9 @@
 <meta property="og:image:alt" content="A device label with the serial and Wi-Fi MAC kept and the fine print crossed out, next to the headline The most boring asset scanner you&#x27;ll ever buy.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#3A1A72">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=8">
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://boredscanner.space/#website", "url": "https://boredscanner.space/", "name": "Bored Scanner", "publisher": {"@id": "https://boredscanner.space/#org"}}, {"@type": "Organization", "@id": "https://boredscanner.space/#org", "name": "BACS Tech, Inc.", "url": "https://www.bacstech.io", "logo": "https://boredscanner.space/mark.png"}]}
 </script>
@@ -30,7 +28,7 @@
 <body>
 
 <header class="hero">
-  <div class="wrap" style="display:block">
+  <div class="wrap u-block">
     <div class="top">
       <details class="switcher">
         <summary class="brand" aria-label="Bored Scanner. Switch app"><img src="mark.png" alt="" width="30" height="30"> Bored Scanner<span class="sw-chev" aria-hidden="true"></span></summary>
@@ -50,13 +48,13 @@
       </nav>
     </div>
   </div>
-  <div class="wrap" style="margin-top: clamp(24px, 5vw, 56px)">
+  <div class="wrap u-mt-fluid">
     <div>
       <div class="stamp" role="img" aria-label="Certified boring"><span class="stamp-top">Certified</span><span class="stamp-main">Boring</span></div>
       <h1>The most “boring” asset scanner you'll ever buy.</h1>
       <p class="lede">Photograph the whole label. Bored Scanner keeps the serial, part number and MAC addresses, skips the “Made in China,” the FCC ID and the copyright line, and sends what matters to Snipe-IT or a spreadsheet.</p>
       <div class="setup-badge"><span class="lvl" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span>Setup: none for CSV capture. Your IT team for Snipe-IT</div>
-      <div class="price-tag"><b>$0.99</b><span class="per">per iPhone or iPad</span><span class="fine">No subscription. No account with us. <a href="#fit" style="color:inherit">Is it right for you?</a></span></div>
+      <div class="price-tag"><b>$0.99</b><span class="per">per iPhone or iPad</span><span class="fine">No subscription. No account with us. <a class="u-inherit" href="#fit">Is it right for you?</a></span></div>
       <div class="cta-row">
         <span class="soon">Coming soon to the App Store</span>
       </div>
@@ -78,7 +76,7 @@
         <li>Don't want Bluetooth? Turn it off. Other brand? Add a label profile with its wording.</li>
         <li>Unsure or malformed values are flagged for a person to check. Nothing is guessed.</li>
       </ul>
-      <p style="margin-top:20px"><a class="cta" href="scanning.html">See everything it scans</a></p>
+      <p class="u-mt-20"><a class="cta" href="scanning.html">See everything it scans</a></p>
     </div>
     <figure class="label-card" aria-label="Example device label. Serial, part number, Wi-Fi and Bluetooth lines are kept; origin, FCC ID and copyright lines are skipped.">
       <div class="skip">Designed by Apple in California. Assembled in China.</div>
@@ -116,7 +114,7 @@
         <p>Done with a computer? Scan it and retire it. It's marked retired in your asset system and the record is kept. It asks before changing anything.</p>
       </div>
     </div>
-    <p class="small" style="margin-top:20px">Assign, Lookup and Retire work with Snipe-IT. With Local CSV, Inventory works on its own.</p>
+    <p class="small u-mt-20">Assign, Lookup and Retire work with Snipe-IT. With Local CSV, Inventory works on its own.</p>
   </div>
 </section>
 
@@ -144,7 +142,7 @@
         </ul>
       </div>
     </div>
-    <div class="note" style="margin-top:24px">
+    <div class="note u-mt-24">
       <p><strong>Use a different asset system?</strong> More can be added on request. <a href="mailto:hello@bacstech.io?subject=Bored%20Scanner%3A%20please%20add%20my%20asset%20system">Tell us which one you use</a>. Requests decide what gets built next.</p>
     </div>
   </div>
@@ -154,7 +152,7 @@
   <div class="wrap">
     <h2>Why we're “boring.”</h2>
     <p class="lede">Asset tools are usually sold as platforms, with barcode wands, per-asset pricing and a sales team. Most IT teams just want serial numbers in their asset system without typing them. That's all this does.</p>
-    <div class="grid-3" style="margin-top:32px">
+    <div class="grid-3 u-mt-32">
       <div class="card">
         <h3>No barcode-wand ritual</h3>
         <p>One photo instead of aiming a wand at the right barcode, five times per box. The camera reads them all at once.</p>
@@ -229,7 +227,7 @@
     <div class="pricing">
       <div class="big">99¢<small>per iPhone or iPad, once</small></div>
       <div>
-        <h2 style="color:#fff">Everything's included. Nothing's “exciting.”</h2>
+        <h2 class="u-white">Everything's included. Nothing's “exciting.”</h2>
         <ul>
           <li>Inventory, Assign, Lookup and Retire, all four</li>
           <li>Label reading on the device, with Apple hardware built in and your own label profiles</li>
@@ -238,7 +236,7 @@
           <li>Employee search from your inventory system's own user list</li>
           <li>Full MDM support (Jamf, Kandji and friends), no “enterprise tier”</li>
         </ul>
-        <p style="margin:18px 0 0">Buying for a whole team? Apple Business lets you buy copies in bulk and push them to devices with no Apple ID on the device. Still 99¢ each.</p>
+        <p class="u-m-18-0-0">Buying for a whole team? Apple Business lets you buy copies in bulk and push them to devices with no Apple ID on the device. Still 99¢ each.</p>
       </div>
     </div>
   </div>

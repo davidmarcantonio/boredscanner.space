@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>What Bored Scanner scans, and how it reads a label</title>
 <meta name="description" content="Box labels, asset tags, engraved serials and a whole pallet of boxes. How Bored Scanner reads a label on the device, keeps the serial and MACs, and skips the fine print.">
@@ -17,17 +18,14 @@
 <meta property="og:image:alt" content="A device label with the serial and Wi-Fi MAC kept and the fine print crossed out, next to the headline The most boring asset scanner you&#x27;ll ever buy.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#3A1A72">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=8">
 </head>
 <body>
 
 <header class="hero hero-short">
-  <div class="wrap" style="display:block">
+  <div class="wrap u-block">
     <div class="top">
       <details class="switcher">
         <summary class="brand" aria-label="Bored Scanner. Switch app"><img src="mark.png" alt="" width="30" height="30"> Bored Scanner<span class="sw-chev" aria-hidden="true"></span></summary>
@@ -47,7 +45,7 @@
       </nav>
     </div>
   </div>
-  <div class="wrap" style="display:block;margin-top:clamp(20px,4vw,44px)">
+  <div class="wrap u-block u-mt-fluid-sm">
     <h1>What it scans, and how it reads a label.</h1>
     <p class="lede">One photo of the whole label. The iPhone or iPad reads every line and every barcode, keeps the values that belong in inventory, and asks you to check them before anything is sent.</p>
   </div>
@@ -143,7 +141,7 @@
       <li>Send the photo. Label photos and raw readings stay on the device; only checked fields leave it.</li>
       <li>Blur the photo. Turning a field off stops it being captured; it doesn't redact it from the picture.</li>
     </ul>
-    <p style="margin-top:24px"><a class="cta" href="/#jobs">See the four jobs it does</a></p>
+    <p class="u-mt-24"><a class="cta" href="/#jobs">See the four jobs it does</a></p>
   </div>
 </section>
 
